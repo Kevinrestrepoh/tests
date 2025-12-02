@@ -1,0 +1,12 @@
+F:\Kevin\Programacion\tests\rabbitmqtest\rust\target\debug\deps\thiserror-0d18d7e4f246a334.d: C:\Users\kevin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\thiserror-2.0.17\src\lib.rs C:\Users\kevin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\thiserror-2.0.17\src\aserror.rs C:\Users\kevin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\thiserror-2.0.17\src\display.rs C:\Users\kevin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\thiserror-2.0.17\src\var.rs C:\Users\kevin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\thiserror-2.0.17\src\private.rs F:\Kevin\Programacion\tests\rabbitmqtest\rust\target\debug\build\thiserror-fe9bc7f5a9fe0c64\out/private.rs
+
+F:\Kevin\Programacion\tests\rabbitmqtest\rust\target\debug\deps\libthiserror-0d18d7e4f246a334.rmeta: C:\Users\kevin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\thiserror-2.0.17\src\lib.rs C:\Users\kevin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\thiserror-2.0.17\src\aserror.rs C:\Users\kevin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\thiserror-2.0.17\src\display.rs C:\Users\kevin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\thiserror-2.0.17\src\var.rs C:\Users\kevin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\thiserror-2.0.17\src\private.rs F:\Kevin\Programacion\tests\rabbitmqtest\rust\target\debug\build\thiserror-fe9bc7f5a9fe0c64\out/private.rs
+
+C:\Users\kevin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\thiserror-2.0.17\src\lib.rs:
+C:\Users\kevin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\thiserror-2.0.17\src\aserror.rs:
+C:\Users\kevin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\thiserror-2.0.17\src\display.rs:
+C:\Users\kevin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\thiserror-2.0.17\src\var.rs:
+C:\Users\kevin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\thiserror-2.0.17\src\private.rs:
+F:\Kevin\Programacion\tests\rabbitmqtest\rust\target\debug\build\thiserror-fe9bc7f5a9fe0c64\out/private.rs:
+
+# env-dep:OUT_DIR=F:\\Kevin\\Programacion\\tests\\rabbitmqtest\\rust\\target\\debug\\build\\thiserror-fe9bc7f5a9fe0c64\\out

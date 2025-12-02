@@ -1,0 +1,684 @@
+   0.341885000s  INFO prepare_target{force=false package_id=rust v0.1.0 (F:\Kevin\Programacion\tests\rabbitmqtest\rust) target="rust"}: cargo::core::compiler::fingerprint: fingerprint error for rust v0.1.0 (F:\Kevin\Programacion\tests\rabbitmqtest\rust)/Check { test: false }/TargetInner { name: "rust", doc: true, ..: with_path("F:\\Kevin\\Programacion\\tests\\rabbitmqtest\\rust\\src\\main.rs", Edition2024) }
+   0.341972000s  INFO prepare_target{force=false package_id=rust v0.1.0 (F:\Kevin\Programacion\tests\rabbitmqtest\rust) target="rust"}: cargo::core::compiler::fingerprint:     err: failed to read `F:\Kevin\Programacion\tests\rabbitmqtest\rust\target\debug\.fingerprint\rust-7e3155fbc3d5915b\bin-rust`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+             at /rustc/ed61e7d7e242494fb7057f2657300d9e77bb4fcb/library\std\src\..\..\backtrace\src\backtrace/win64.rs:85:14
+   1: std::backtrace::Backtrace::capture
+             at /rustc/ed61e7d7e242494fb7057f2657300d9e77bb4fcb/library\std\src/backtrace.rs:296:9
+   2: <std::io::error::Error as anyhow::context::ext::StdError>::ext_context::<alloc::string::String>
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile_with_exec
+  10: cargo::ops::cargo_compile::compile
+  11: cargo::commands::check::exec
+  12: <cargo::cli::Exec>::exec
+  13: cargo::cli::main
+  14: cargo::main
+  15: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  16: std::rt::lang_start::<()>::{closure#0}
+  17: std::rt::lang_start_internal
+             at /rustc/ed61e7d7e242494fb7057f2657300d9e77bb4fcb/library\core\src\ops/function.rs:287:21
+  18: main
+  19: __tmainCRTStartup
+  20: mainCRTStartup
+  21: <unknown>
+  22: <unknown>
+   0.356879600s  INFO prepare_target{force=false package_id=lapin v3.7.2 target="lapin"}: cargo::core::compiler::fingerprint: fingerprint error for lapin v3.7.2/Check { test: false }/TargetInner { ..: lib_target("lapin", ["lib"], "C:\\Users\\kevin\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\lapin-3.7.2\\src\\lib.rs", Edition2024) }
+   0.356928900s  INFO prepare_target{force=false package_id=lapin v3.7.2 target="lapin"}: cargo::core::compiler::fingerprint:     err: failed to read `F:\Kevin\Programacion\tests\rabbitmqtest\rust\target\debug\.fingerprint\lapin-ed93712cbce9379f\lib-lapin`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+             at /rustc/ed61e7d7e242494fb7057f2657300d9e77bb4fcb/library\std\src\..\..\backtrace\src\backtrace/win64.rs:85:14
+   1: std::backtrace::Backtrace::capture
+             at /rustc/ed61e7d7e242494fb7057f2657300d9e77bb4fcb/library\std\src/backtrace.rs:296:9
+   2: <std::io::error::Error as anyhow::context::ext::StdError>::ext_context::<alloc::string::String>
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   9: cargo::ops::cargo_compile::compile_ws
+  10: cargo::ops::cargo_compile::compile_with_exec
+  11: cargo::ops::cargo_compile::compile
+  12: cargo::commands::check::exec
+  13: <cargo::cli::Exec>::exec
+  14: cargo::cli::main
+  15: cargo::main
+  16: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  17: std::rt::lang_start::<()>::{closure#0}
+  18: std::rt::lang_start_internal
+             at /rustc/ed61e7d7e242494fb7057f2657300d9e77bb4fcb/library\core\src\ops/function.rs:287:21
+  19: main
+  20: __tmainCRTStartup
+  21: mainCRTStartup
+  22: <unknown>
+  23: <unknown>
+   0.357849200s  INFO prepare_target{force=false package_id=amq-protocol v8.3.1 target="amq_protocol"}: cargo::core::compiler::fingerprint: fingerprint error for amq-protocol v8.3.1/Check { test: false }/TargetInner { ..: lib_target("amq_protocol", ["lib"], "C:\\Users\\kevin\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\amq-protocol-8.3.1\\src\\lib.rs", Edition2024) }
+   0.357880300s  INFO prepare_target{force=false package_id=amq-protocol v8.3.1 target="amq_protocol"}: cargo::core::compiler::fingerprint:     err: failed to read `F:\Kevin\Programacion\tests\rabbitmqtest\rust\target\debug\.fingerprint\amq-protocol-78f3b8e3158a95a3\lib-amq_protocol`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+             at /rustc/ed61e7d7e242494fb7057f2657300d9e77bb4fcb/library\std\src\..\..\backtrace\src\backtrace/win64.rs:85:14
+   1: std::backtrace::Backtrace::capture
+             at /rustc/ed61e7d7e242494fb7057f2657300d9e77bb4fcb/library\std\src/backtrace.rs:296:9
+   2: <std::io::error::Error as anyhow::context::ext::StdError>::ext_context::<alloc::string::String>
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  10: cargo::ops::cargo_compile::compile_ws
+  11: cargo::ops::cargo_compile::compile_with_exec
+  12: cargo::ops::cargo_compile::compile
+  13: cargo::commands::check::exec
+  14: <cargo::cli::Exec>::exec
+  15: cargo::cli::main
+  16: cargo::main
+  17: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  18: std::rt::lang_start::<()>::{closure#0}
+  19: std::rt::lang_start_internal
+             at /rustc/ed61e7d7e242494fb7057f2657300d9e77bb4fcb/library\core\src\ops/function.rs:287:21
+  20: main
+  21: __tmainCRTStartup
+  22: mainCRTStartup
+  23: <unknown>
+  24: <unknown>
+   0.359795000s  INFO prepare_target{force=false package_id=amq-protocol-tcp v8.3.1 target="amq_protocol_tcp"}: cargo::core::compiler::fingerprint: fingerprint error for amq-protocol-tcp v8.3.1/Check { test: false }/TargetInner { ..: lib_target("amq_protocol_tcp", ["lib"], "C:\\Users\\kevin\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\amq-protocol-tcp-8.3.1\\src\\lib.rs", Edition2024) }
+   0.359825500s  INFO prepare_target{force=false package_id=amq-protocol-tcp v8.3.1 target="amq_protocol_tcp"}: cargo::core::compiler::fingerprint:     err: failed to read `F:\Kevin\Programacion\tests\rabbitmqtest\rust\target\debug\.fingerprint\amq-protocol-tcp-87d5719b2c76aa9c\lib-amq_protocol_tcp`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+             at /rustc/ed61e7d7e242494fb7057f2657300d9e77bb4fcb/library\std\src\..\..\backtrace\src\backtrace/win64.rs:85:14
+   1: std::backtrace::Backtrace::capture
+             at /rustc/ed61e7d7e242494fb7057f2657300d9e77bb4fcb/library\std\src/backtrace.rs:296:9
+   2: <std::io::error::Error as anyhow::context::ext::StdError>::ext_context::<alloc::string::String>
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  11: cargo::ops::cargo_compile::compile_ws
+  12: cargo::ops::cargo_compile::compile_with_exec
+  13: cargo::ops::cargo_compile::compile
+  14: cargo::commands::check::exec
+  15: <cargo::cli::Exec>::exec
+  16: cargo::cli::main
+  17: cargo::main
+  18: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  19: std::rt::lang_start::<()>::{closure#0}
+  20: std::rt::lang_start_internal
+             at /rustc/ed61e7d7e242494fb7057f2657300d9e77bb4fcb/library\core\src\ops/function.rs:287:21
+  21: main
+  22: __tmainCRTStartup
+  23: mainCRTStartup
+  24: <unknown>
+  25: <unknown>
+   0.381885500s  INFO prepare_target{force=false package_id=tcp-stream v0.30.9 target="tcp_stream"}: cargo::core::compiler::fingerprint: fingerprint error for tcp-stream v0.30.9/Check { test: false }/TargetInner { ..: lib_target("tcp_stream", ["lib"], "C:\\Users\\kevin\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\tcp-stream-0.30.9\\src\\lib.rs", Edition2024) }
+   0.381917900s  INFO prepare_target{force=false package_id=tcp-stream v0.30.9 target="tcp_stream"}: cargo::core::compiler::fingerprint:     err: failed to read `F:\Kevin\Programacion\tests\rabbitmqtest\rust\target\debug\.fingerprint\tcp-stream-79c1b36900fdeab9\lib-tcp_stream`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+             at /rustc/ed61e7d7e242494fb7057f2657300d9e77bb4fcb/library\std\src\..\..\backtrace\src\backtrace/win64.rs:85:14
+   1: std::backtrace::Backtrace::capture
+             at /rustc/ed61e7d7e242494fb7057f2657300d9e77bb4fcb/library\std\src/backtrace.rs:296:9
+   2: <std::io::error::Error as anyhow::context::ext::StdError>::ext_context::<alloc::string::String>
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  12: cargo::ops::cargo_compile::compile_ws
+  13: cargo::ops::cargo_compile::compile_with_exec
+  14: cargo::ops::cargo_compile::compile
+  15: cargo::commands::check::exec
+  16: <cargo::cli::Exec>::exec
+  17: cargo::cli::main
+  18: cargo::main
+  19: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  20: std::rt::lang_start::<()>::{closure#0}
+  21: std::rt::lang_start_internal
+             at /rustc/ed61e7d7e242494fb7057f2657300d9e77bb4fcb/library\core\src\ops/function.rs:287:21
+  22: main
+  23: __tmainCRTStartup
+  24: mainCRTStartup
+  25: <unknown>
+  26: <unknown>
+   0.400335300s  INFO prepare_target{force=false package_id=rustls-connector v0.21.11 target="rustls_connector"}: cargo::core::compiler::fingerprint: fingerprint error for rustls-connector v0.21.11/Check { test: false }/TargetInner { ..: lib_target("rustls_connector", ["lib"], "C:\\Users\\kevin\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\rustls-connector-0.21.11\\src\\lib.rs", Edition2024) }
+   0.400368900s  INFO prepare_target{force=false package_id=rustls-connector v0.21.11 target="rustls_connector"}: cargo::core::compiler::fingerprint:     err: failed to read `F:\Kevin\Programacion\tests\rabbitmqtest\rust\target\debug\.fingerprint\rustls-connector-ed7a6f471e4ab021\lib-rustls_connector`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+             at /rustc/ed61e7d7e242494fb7057f2657300d9e77bb4fcb/library\std\src\..\..\backtrace\src\backtrace/win64.rs:85:14
+   1: std::backtrace::Backtrace::capture
+             at /rustc/ed61e7d7e242494fb7057f2657300d9e77bb4fcb/library\std\src/backtrace.rs:296:9
+   2: <std::io::error::Error as anyhow::context::ext::StdError>::ext_context::<alloc::string::String>
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: cargo::core::compiler::compile
+  12: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  13: cargo::ops::cargo_compile::compile_ws
+  14: cargo::ops::cargo_compile::compile_with_exec
+  15: cargo::ops::cargo_compile::compile
+  16: cargo::commands::check::exec
+  17: <cargo::cli::Exec>::exec
+  18: cargo::cli::main
+  19: cargo::main
+  20: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  21: std::rt::lang_start::<()>::{closure#0}
+  22: std::rt::lang_start_internal
+             at /rustc/ed61e7d7e242494fb7057f2657300d9e77bb4fcb/library\core\src\ops/function.rs:287:21
+  23: main
+  24: __tmainCRTStartup
+  25: mainCRTStartup
+  26: <unknown>
+  27: <unknown>
+   0.400945400s  INFO prepare_target{force=false package_id=futures-rustls v0.26.0 target="futures_rustls"}: cargo::core::compiler::fingerprint: fingerprint error for futures-rustls v0.26.0/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("futures_rustls", ["lib"], "C:\\Users\\kevin\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\futures-rustls-0.26.0\\src\\lib.rs", Edition2018) }
+   0.400976400s  INFO prepare_target{force=false package_id=futures-rustls v0.26.0 target="futures_rustls"}: cargo::core::compiler::fingerprint:     err: failed to read `F:\Kevin\Programacion\tests\rabbitmqtest\rust\target\debug\.fingerprint\futures-rustls-331f01027db10f93\lib-futures_rustls`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+             at /rustc/ed61e7d7e242494fb7057f2657300d9e77bb4fcb/library\std\src\..\..\backtrace\src\backtrace/win64.rs:85:14
+   1: std::backtrace::Backtrace::capture
+             at /rustc/ed61e7d7e242494fb7057f2657300d9e77bb4fcb/library\std\src/backtrace.rs:296:9
+   2: <std::io::error::Error as anyhow::context::ext::StdError>::ext_context::<alloc::string::String>
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: cargo::core::compiler::compile
+  12: cargo::core::compiler::compile
+  13: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  14: cargo::ops::cargo_compile::compile_ws
+  15: cargo::ops::cargo_compile::compile_with_exec
+  16: cargo::ops::cargo_compile::compile
+  17: cargo::commands::check::exec
+  18: <cargo::cli::Exec>::exec
+  19: cargo::cli::main
+  20: cargo::main
+  21: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  22: std::rt::lang_start::<()>::{closure#0}
+  23: std::rt::lang_start_internal
+             at /rustc/ed61e7d7e242494fb7057f2657300d9e77bb4fcb/library\core\src\ops/function.rs:287:21
+  24: main
+  25: __tmainCRTStartup
+  26: mainCRTStartup
+  27: <unknown>
+  28: <unknown>
+   0.401448400s  INFO prepare_target{force=false package_id=rustls v0.23.35 target="rustls"}: cargo::core::compiler::fingerprint: fingerprint error for rustls v0.23.35/Check { test: false }/TargetInner { ..: lib_target("rustls", ["lib"], "C:\\Users\\kevin\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\rustls-0.23.35\\src\\lib.rs", Edition2021) }
+   0.401471700s  INFO prepare_target{force=false package_id=rustls v0.23.35 target="rustls"}: cargo::core::compiler::fingerprint:     err: failed to read `F:\Kevin\Programacion\tests\rabbitmqtest\rust\target\debug\.fingerprint\rustls-c73eb4b961aa6307\lib-rustls`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+             at /rustc/ed61e7d7e242494fb7057f2657300d9e77bb4fcb/library\std\src\..\..\backtrace\src\backtrace/win64.rs:85:14
+   1: std::backtrace::Backtrace::capture
+             at /rustc/ed61e7d7e242494fb7057f2657300d9e77bb4fcb/library\std\src/backtrace.rs:296:9
+   2: <std::io::error::Error as anyhow::context::ext::StdError>::ext_context::<alloc::string::String>
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: cargo::core::compiler::compile
+  12: cargo::core::compiler::compile
+  13: cargo::core::compiler::compile
+  14: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  15: cargo::ops::cargo_compile::compile_ws
+  16: cargo::ops::cargo_compile::compile_with_exec
+  17: cargo::ops::cargo_compile::compile
+  18: cargo::commands::check::exec
+  19: <cargo::cli::Exec>::exec
+  20: cargo::cli::main
+  21: cargo::main
+  22: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  23: std::rt::lang_start::<()>::{closure#0}
+  24: std::rt::lang_start_internal
+             at /rustc/ed61e7d7e242494fb7057f2657300d9e77bb4fcb/library\core\src\ops/function.rs:287:21
+  25: main
+  26: __tmainCRTStartup
+  27: mainCRTStartup
+  28: <unknown>
+  29: <unknown>
+   0.401998100s  INFO prepare_target{force=false package_id=aws-lc-rs v1.15.1 target="aws_lc_rs"}: cargo::core::compiler::fingerprint: fingerprint error for aws-lc-rs v1.15.1/Check { test: false }/TargetInner { ..: lib_target("aws_lc_rs", ["lib"], "C:\\Users\\kevin\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\aws-lc-rs-1.15.1\\src\\lib.rs", Edition2021) }
+   0.402028700s  INFO prepare_target{force=false package_id=aws-lc-rs v1.15.1 target="aws_lc_rs"}: cargo::core::compiler::fingerprint:     err: failed to read `F:\Kevin\Programacion\tests\rabbitmqtest\rust\target\debug\.fingerprint\aws-lc-rs-e3d9101de0f5f0a8\lib-aws_lc_rs`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+             at /rustc/ed61e7d7e242494fb7057f2657300d9e77bb4fcb/library\std\src\..\..\backtrace\src\backtrace/win64.rs:85:14
+   1: std::backtrace::Backtrace::capture
+             at /rustc/ed61e7d7e242494fb7057f2657300d9e77bb4fcb/library\std\src/backtrace.rs:296:9
+   2: <std::io::error::Error as anyhow::context::ext::StdError>::ext_context::<alloc::string::String>
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: cargo::core::compiler::compile
+  12: cargo::core::compiler::compile
+  13: cargo::core::compiler::compile
+  14: cargo::core::compiler::compile
+  15: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  16: cargo::ops::cargo_compile::compile_ws
+  17: cargo::ops::cargo_compile::compile_with_exec
+  18: cargo::ops::cargo_compile::compile
+  19: cargo::commands::check::exec
+  20: <cargo::cli::Exec>::exec
+  21: cargo::cli::main
+  22: cargo::main
+  23: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  24: std::rt::lang_start::<()>::{closure#0}
+  25: std::rt::lang_start_internal
+             at /rustc/ed61e7d7e242494fb7057f2657300d9e77bb4fcb/library\core\src\ops/function.rs:287:21
+  26: main
+  27: __tmainCRTStartup
+  28: mainCRTStartup
+  29: <unknown>
+  30: <unknown>
+   0.402920600s  INFO prepare_target{force=false package_id=aws-lc-rs v1.15.1 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for aws-lc-rs v1.15.1/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "C:\\Users\\kevin\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\aws-lc-rs-1.15.1\\build.rs", Edition2021) }
+   0.402949400s  INFO prepare_target{force=false package_id=aws-lc-rs v1.15.1 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `F:\Kevin\Programacion\tests\rabbitmqtest\rust\target\debug\.fingerprint\aws-lc-rs-41d33b60a686c480\run-build-script-build-script-build`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+             at /rustc/ed61e7d7e242494fb7057f2657300d9e77bb4fcb/library\std\src\..\..\backtrace\src\backtrace/win64.rs:85:14
+   1: std::backtrace::Backtrace::capture
+             at /rustc/ed61e7d7e242494fb7057f2657300d9e77bb4fcb/library\std\src/backtrace.rs:296:9
+   2: <std::io::error::Error as anyhow::context::ext::StdError>::ext_context::<alloc::string::String>
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::custom_build::build_work
+   7: cargo::core::compiler::custom_build::prepare
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: cargo::core::compiler::compile
+  12: cargo::core::compiler::compile
+  13: cargo::core::compiler::compile
+  14: cargo::core::compiler::compile
+  15: cargo::core::compiler::compile
+  16: cargo::core::compiler::compile
+  17: cargo::core::compiler::compile
+  18: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  19: cargo::ops::cargo_compile::compile_ws
+  20: cargo::ops::cargo_compile::compile_with_exec
+  21: cargo::ops::cargo_compile::compile
+  22: cargo::commands::check::exec
+  23: <cargo::cli::Exec>::exec
+  24: cargo::cli::main
+  25: cargo::main
+  26: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  27: std::rt::lang_start::<()>::{closure#0}
+  28: std::rt::lang_start_internal
+             at /rustc/ed61e7d7e242494fb7057f2657300d9e77bb4fcb/library\core\src\ops/function.rs:287:21
+  29: main
+  30: __tmainCRTStartup
+  31: mainCRTStartup
+  32: <unknown>
+  33: <unknown>
+   0.404004300s  INFO prepare_target{force=false package_id=aws-lc-sys v0.34.0 target="build-script-main"}: cargo::core::compiler::fingerprint: fingerprint error for aws-lc-sys v0.34.0/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-main", "C:\\Users\\kevin\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\aws-lc-sys-0.34.0\\builder\\main.rs", Edition2021) }
+   0.404034500s  INFO prepare_target{force=false package_id=aws-lc-sys v0.34.0 target="build-script-main"}: cargo::core::compiler::fingerprint:     err: failed to read `F:\Kevin\Programacion\tests\rabbitmqtest\rust\target\debug\.fingerprint\aws-lc-sys-9d512db7f983b028\run-build-script-build-script-main`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+             at /rustc/ed61e7d7e242494fb7057f2657300d9e77bb4fcb/library\std\src\..\..\backtrace\src\backtrace/win64.rs:85:14
+   1: std::backtrace::Backtrace::capture
+             at /rustc/ed61e7d7e242494fb7057f2657300d9e77bb4fcb/library\std\src/backtrace.rs:296:9
+   2: <std::io::error::Error as anyhow::context::ext::StdError>::ext_context::<alloc::string::String>
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::custom_build::build_work
+   7: cargo::core::compiler::custom_build::prepare
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: cargo::core::compiler::compile
+  12: cargo::core::compiler::compile
+  13: cargo::core::compiler::compile
+  14: cargo::core::compiler::compile
+  15: cargo::core::compiler::compile
+  16: cargo::core::compiler::compile
+  17: cargo::core::compiler::compile
+  18: cargo::core::compiler::compile
+  19: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  20: cargo::ops::cargo_compile::compile_ws
+  21: cargo::ops::cargo_compile::compile_with_exec
+  22: cargo::ops::cargo_compile::compile
+  23: cargo::commands::check::exec
+  24: <cargo::cli::Exec>::exec
+  25: cargo::cli::main
+  26: cargo::main
+  27: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  28: std::rt::lang_start::<()>::{closure#0}
+  29: std::rt::lang_start_internal
+             at /rustc/ed61e7d7e242494fb7057f2657300d9e77bb4fcb/library\core\src\ops/function.rs:287:21
+  30: main
+  31: __tmainCRTStartup
+  32: mainCRTStartup
+  33: <unknown>
+  34: <unknown>
+   0.404304100s  INFO prepare_target{force=false package_id=aws-lc-sys v0.34.0 target="build-script-main"}: cargo::core::compiler::fingerprint: fingerprint error for aws-lc-sys v0.34.0/Build/TargetInner { ..: custom_build_target("build-script-main", "C:\\Users\\kevin\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\aws-lc-sys-0.34.0\\builder\\main.rs", Edition2021) }
+   0.404336700s  INFO prepare_target{force=false package_id=aws-lc-sys v0.34.0 target="build-script-main"}: cargo::core::compiler::fingerprint:     err: failed to read `F:\Kevin\Programacion\tests\rabbitmqtest\rust\target\debug\.fingerprint\aws-lc-sys-d7348fb80efb5a98\build-script-build-script-main`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+             at /rustc/ed61e7d7e242494fb7057f2657300d9e77bb4fcb/library\std\src\..\..\backtrace\src\backtrace/win64.rs:85:14
+   1: std::backtrace::Backtrace::capture
+             at /rustc/ed61e7d7e242494fb7057f2657300d9e77bb4fcb/library\std\src/backtrace.rs:296:9
+   2: <std::io::error::Error as anyhow::context::ext::StdError>::ext_context::<alloc::string::String>
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: cargo::core::compiler::compile
+  12: cargo::core::compiler::compile
+  13: cargo::core::compiler::compile
+  14: cargo::core::compiler::compile
+  15: cargo::core::compiler::compile
+  16: cargo::core::compiler::compile
+  17: cargo::core::compiler::compile
+  18: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  19: cargo::ops::cargo_compile::compile_ws
+  20: cargo::ops::cargo_compile::compile_with_exec
+  21: cargo::ops::cargo_compile::compile
+  22: cargo::commands::check::exec
+  23: <cargo::cli::Exec>::exec
+  24: cargo::cli::main
+  25: cargo::main
+  26: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  27: std::rt::lang_start::<()>::{closure#0}
+  28: std::rt::lang_start_internal
+             at /rustc/ed61e7d7e242494fb7057f2657300d9e77bb4fcb/library\core\src\ops/function.rs:287:21
+  29: main
+  30: __tmainCRTStartup
+  31: mainCRTStartup
+  32: <unknown>
+  33: <unknown>
+   0.405063800s  INFO prepare_target{force=false package_id=cc v1.2.48 target="cc"}: cargo::core::compiler::fingerprint: fingerprint dirty for cc v1.2.48/Build/TargetInner { ..: lib_target("cc", ["lib"], "C:\\Users\\kevin\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\cc-1.2.48\\src\\lib.rs", Edition2018) }
+   0.405103800s  INFO prepare_target{force=false package_id=cc v1.2.48 target="cc"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleDepFingerprint { name: "jobserver" })
+   0.406059900s  INFO prepare_target{force=false package_id=jobserver v0.1.34 target="jobserver"}: cargo::core::compiler::fingerprint: fingerprint dirty for jobserver v0.1.34/Build/TargetInner { ..: lib_target("jobserver", ["lib"], "C:\\Users\\kevin\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\jobserver-0.1.34\\src\\lib.rs", Edition2021) }
+   0.406090600s  INFO prepare_target{force=false package_id=jobserver v0.1.34 target="jobserver"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleDepFingerprint { name: "getrandom" })
+   0.406606600s  INFO prepare_target{force=false package_id=getrandom v0.3.4 target="getrandom"}: cargo::core::compiler::fingerprint: fingerprint error for getrandom v0.3.4/Build/TargetInner { ..: lib_target("getrandom", ["lib"], "C:\\Users\\kevin\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\getrandom-0.3.4\\src\\lib.rs", Edition2021) }
+   0.406635800s  INFO prepare_target{force=false package_id=getrandom v0.3.4 target="getrandom"}: cargo::core::compiler::fingerprint:     err: failed to read `F:\Kevin\Programacion\tests\rabbitmqtest\rust\target\debug\.fingerprint\getrandom-62dbd68bd1038c52\lib-getrandom`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+             at /rustc/ed61e7d7e242494fb7057f2657300d9e77bb4fcb/library\std\src\..\..\backtrace\src\backtrace/win64.rs:85:14
+   1: std::backtrace::Backtrace::capture
+             at /rustc/ed61e7d7e242494fb7057f2657300d9e77bb4fcb/library\std\src/backtrace.rs:296:9
+   2: <std::io::error::Error as anyhow::context::ext::StdError>::ext_context::<alloc::string::String>
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: cargo::core::compiler::compile
+  12: cargo::core::compiler::compile
+  13: cargo::core::compiler::compile
+  14: cargo::core::compiler::compile
+  15: cargo::core::compiler::compile
+  16: cargo::core::compiler::compile
+  17: cargo::core::compiler::compile
+  18: cargo::core::compiler::compile
+  19: cargo::core::compiler::compile
+  20: cargo::core::compiler::compile
+  21: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  22: cargo::ops::cargo_compile::compile_ws
+  23: cargo::ops::cargo_compile::compile_with_exec
+  24: cargo::ops::cargo_compile::compile
+  25: cargo::commands::check::exec
+  26: <cargo::cli::Exec>::exec
+  27: cargo::cli::main
+  28: cargo::main
+  29: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  30: std::rt::lang_start::<()>::{closure#0}
+  31: std::rt::lang_start_internal
+             at /rustc/ed61e7d7e242494fb7057f2657300d9e77bb4fcb/library\core\src\ops/function.rs:287:21
+  32: main
+  33: __tmainCRTStartup
+  34: mainCRTStartup
+  35: <unknown>
+  36: <unknown>
+   0.407780000s  INFO prepare_target{force=false package_id=cmake v0.1.54 target="cmake"}: cargo::core::compiler::fingerprint: fingerprint dirty for cmake v0.1.54/Build/TargetInner { ..: lib_target("cmake", ["lib"], "C:\\Users\\kevin\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\cmake-0.1.54\\src\\lib.rs", Edition2021) }
+   0.407809500s  INFO prepare_target{force=false package_id=cmake v0.1.54 target="cmake"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleDepFingerprint { name: "cc" })
+   0.408663100s  INFO prepare_target{force=false package_id=aws-lc-sys v0.34.0 target="aws_lc_sys"}: cargo::core::compiler::fingerprint: fingerprint error for aws-lc-sys v0.34.0/Check { test: false }/TargetInner { ..: lib_target("aws_lc_sys", ["lib"], "C:\\Users\\kevin\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\aws-lc-sys-0.34.0\\src\\lib.rs", Edition2021) }
+   0.408692600s  INFO prepare_target{force=false package_id=aws-lc-sys v0.34.0 target="aws_lc_sys"}: cargo::core::compiler::fingerprint:     err: failed to read `F:\Kevin\Programacion\tests\rabbitmqtest\rust\target\debug\.fingerprint\aws-lc-sys-cc2a2332b935df97\lib-aws_lc_sys`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+             at /rustc/ed61e7d7e242494fb7057f2657300d9e77bb4fcb/library\std\src\..\..\backtrace\src\backtrace/win64.rs:85:14
+   1: std::backtrace::Backtrace::capture
+             at /rustc/ed61e7d7e242494fb7057f2657300d9e77bb4fcb/library\std\src/backtrace.rs:296:9
+   2: <std::io::error::Error as anyhow::context::ext::StdError>::ext_context::<alloc::string::String>
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: cargo::core::compiler::compile
+  12: cargo::core::compiler::compile
+  13: cargo::core::compiler::compile
+  14: cargo::core::compiler::compile
+  15: cargo::core::compiler::compile
+  16: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  17: cargo::ops::cargo_compile::compile_ws
+  18: cargo::ops::cargo_compile::compile_with_exec
+  19: cargo::ops::cargo_compile::compile
+  20: cargo::commands::check::exec
+  21: <cargo::cli::Exec>::exec
+  22: cargo::cli::main
+  23: cargo::main
+  24: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  25: std::rt::lang_start::<()>::{closure#0}
+  26: std::rt::lang_start_internal
+             at /rustc/ed61e7d7e242494fb7057f2657300d9e77bb4fcb/library\core\src\ops/function.rs:287:21
+  27: main
+  28: __tmainCRTStartup
+  29: mainCRTStartup
+  30: <unknown>
+  31: <unknown>
+   0.409821000s  INFO prepare_target{force=false package_id=rustls v0.23.35 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for rustls v0.23.35/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "C:\\Users\\kevin\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\rustls-0.23.35\\build.rs", Edition2021) }
+   0.409849700s  INFO prepare_target{force=false package_id=rustls v0.23.35 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `F:\Kevin\Programacion\tests\rabbitmqtest\rust\target\debug\.fingerprint\rustls-2962931a8bc1b52a\run-build-script-build-script-build`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+             at /rustc/ed61e7d7e242494fb7057f2657300d9e77bb4fcb/library\std\src\..\..\backtrace\src\backtrace/win64.rs:85:14
+   1: std::backtrace::Backtrace::capture
+             at /rustc/ed61e7d7e242494fb7057f2657300d9e77bb4fcb/library\std\src/backtrace.rs:296:9
+   2: <std::io::error::Error as anyhow::context::ext::StdError>::ext_context::<alloc::string::String>
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::custom_build::build_work
+   7: cargo::core::compiler::custom_build::prepare
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: cargo::core::compiler::compile
+  12: cargo::core::compiler::compile
+  13: cargo::core::compiler::compile
+  14: cargo::core::compiler::compile
+  15: cargo::core::compiler::compile
+  16: cargo::core::compiler::compile
+  17: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  18: cargo::ops::cargo_compile::compile_ws
+  19: cargo::ops::cargo_compile::compile_with_exec
+  20: cargo::ops::cargo_compile::compile
+  21: cargo::commands::check::exec
+  22: <cargo::cli::Exec>::exec
+  23: cargo::cli::main
+  24: cargo::main
+  25: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  26: std::rt::lang_start::<()>::{closure#0}
+  27: std::rt::lang_start_internal
+             at /rustc/ed61e7d7e242494fb7057f2657300d9e77bb4fcb/library\core\src\ops/function.rs:287:21
+  28: main
+  29: __tmainCRTStartup
+  30: mainCRTStartup
+  31: <unknown>
+  32: <unknown>
+   0.410483000s  INFO prepare_target{force=false package_id=rustls-webpki v0.103.8 target="webpki"}: cargo::core::compiler::fingerprint: fingerprint error for rustls-webpki v0.103.8/Check { test: false }/TargetInner { ..: lib_target("webpki", ["lib"], "C:\\Users\\kevin\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\rustls-webpki-0.103.8\\src\\lib.rs", Edition2021) }
+   0.410511700s  INFO prepare_target{force=false package_id=rustls-webpki v0.103.8 target="webpki"}: cargo::core::compiler::fingerprint:     err: failed to read `F:\Kevin\Programacion\tests\rabbitmqtest\rust\target\debug\.fingerprint\rustls-webpki-a9e90f014217a194\lib-webpki`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+             at /rustc/ed61e7d7e242494fb7057f2657300d9e77bb4fcb/library\std\src\..\..\backtrace\src\backtrace/win64.rs:85:14
+   1: std::backtrace::Backtrace::capture
+             at /rustc/ed61e7d7e242494fb7057f2657300d9e77bb4fcb/library\std\src/backtrace.rs:296:9
+   2: <std::io::error::Error as anyhow::context::ext::StdError>::ext_context::<alloc::string::String>
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: cargo::core::compiler::compile
+  12: cargo::core::compiler::compile
+  13: cargo::core::compiler::compile
+  14: cargo::core::compiler::compile
+  15: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  16: cargo::ops::cargo_compile::compile_ws
+  17: cargo::ops::cargo_compile::compile_with_exec
+  18: cargo::ops::cargo_compile::compile
+  19: cargo::commands::check::exec
+  20: <cargo::cli::Exec>::exec
+  21: cargo::cli::main
+  22: cargo::main
+  23: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  24: std::rt::lang_start::<()>::{closure#0}
+  25: std::rt::lang_start_internal
+             at /rustc/ed61e7d7e242494fb7057f2657300d9e77bb4fcb/library\core\src\ops/function.rs:287:21
+  26: main
+  27: __tmainCRTStartup
+  28: mainCRTStartup
+  29: <unknown>
+  30: <unknown>
+   0.419690900s  INFO prepare_target{force=false package_id=rust v0.1.0 (F:\Kevin\Programacion\tests\rabbitmqtest\rust) target="rust"}: cargo::core::compiler::fingerprint: fingerprint error for rust v0.1.0 (F:\Kevin\Programacion\tests\rabbitmqtest\rust)/Check { test: true }/TargetInner { name: "rust", doc: true, ..: with_path("F:\\Kevin\\Programacion\\tests\\rabbitmqtest\\rust\\src\\main.rs", Edition2024) }
+   0.419722000s  INFO prepare_target{force=false package_id=rust v0.1.0 (F:\Kevin\Programacion\tests\rabbitmqtest\rust) target="rust"}: cargo::core::compiler::fingerprint:     err: failed to read `F:\Kevin\Programacion\tests\rabbitmqtest\rust\target\debug\.fingerprint\rust-e1f285c6d825f9b5\test-bin-rust`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+             at /rustc/ed61e7d7e242494fb7057f2657300d9e77bb4fcb/library\std\src\..\..\backtrace\src\backtrace/win64.rs:85:14
+   1: std::backtrace::Backtrace::capture
+             at /rustc/ed61e7d7e242494fb7057f2657300d9e77bb4fcb/library\std\src/backtrace.rs:296:9
+   2: <std::io::error::Error as anyhow::context::ext::StdError>::ext_context::<alloc::string::String>
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile_with_exec
+  10: cargo::ops::cargo_compile::compile
+  11: cargo::commands::check::exec
+  12: <cargo::cli::Exec>::exec
+  13: cargo::cli::main
+  14: cargo::main
+  15: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  16: std::rt::lang_start::<()>::{closure#0}
+  17: std::rt::lang_start_internal
+             at /rustc/ed61e7d7e242494fb7057f2657300d9e77bb4fcb/library\core\src\ops/function.rs:287:21
+  18: main
+  19: __tmainCRTStartup
+  20: mainCRTStartup
+  21: <unknown>
+  22: <unknown>
+   Compiling getrandom v0.3.4
+   Compiling jobserver v0.1.34
+error: could not compile `getrandom` (lib) due to 1 previous error
+warning: build failed, waiting for other jobs to finish...
+   Compiling cc v1.2.48
+   Compiling cmake v0.1.54
