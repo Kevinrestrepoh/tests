@@ -1,1 +1,0 @@
-/home/kevin/Kevin/tests/rabbitmqtest/rust/target/debug/rust: /home/kevin/Kevin/tests/rabbitmqtest/rust/src/main.rs /home/kevin/Kevin/tests/rabbitmqtest/rust/src/models.rs /home/kevin/Kevin/tests/rabbitmqtest/rust/src/rabbitmq.rs
