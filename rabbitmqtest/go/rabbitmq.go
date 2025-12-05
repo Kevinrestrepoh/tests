@@ -6,21 +6,23 @@ import (
 	amqp "github.com/rabbitmq/amqp091-go"
 )
 
-func ConnectRabbitMQ(url string) (*amqp.Channel, func() error) {
+func ConnectRabbitMQ(url string) (*amqp.Channel, *amqp.Connection) {
 	conn, err := amqp.Dial(url)
 	if err != nil {
-		log.Fatal(err)
+		log.Fatalf("Failed to connect to RabbitMQ: %v", err)
 	}
-	defer conn.Close()
 
 	ch, err := conn.Channel()
 	if err != nil {
-		log.Fatal(err)
+		log.Fatalf("Failed to connect to Channel: %v", err)
 	}
-	defer ch.Close()
 
-	err = ch.ExchangeDeclare(
-		"exchange",
+	return ch, conn
+}
+
+func Declare(ch *amqp.Channel) (*amqp.Queue, error) {
+	err := ch.ExchangeDeclare(
+		"test_exchange",
 		"direct",
 		true,
 		false,
@@ -29,8 +31,13 @@ func ConnectRabbitMQ(url string) (*amqp.Channel, func() error) {
 		nil,
 	)
 	if err != nil {
-		log.Fatal(err)
+		return nil, err
 	}
 
-	return ch, conn.Close
+	q, err := ch.QueueDeclare("item_qeue", true, false, false, false, nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return &q, nil
 }

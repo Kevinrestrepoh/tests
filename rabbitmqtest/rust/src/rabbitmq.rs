@@ -1,12 +1,16 @@
+use futures_lite::StreamExt;
 use lapin::{
     Channel, Connection, ConnectionProperties,
-    options::{BasicAckOptions, BasicConsumeOptions},
+    options::{
+        BasicAckOptions, BasicConsumeOptions, ExchangeDeclareOptions, QueueBindOptions,
+        QueueDeclareOptions,
+    },
     types::FieldTable,
 };
 
-use crate::models::{self, Item};
+use crate::models::Item;
 
-pub async fn connect_rabbitmq(url: String) -> Channel {
+pub async fn connect_rabbitmq(url: &str) -> Channel {
     let conn = Connection::connect(url, ConnectionProperties::default())
         .await
         .expect("Failed to connect RabbitMQ");
@@ -17,7 +21,8 @@ pub async fn connect_rabbitmq(url: String) -> Channel {
 }
 
 pub async fn consume(ch: &Channel) {
-    declare_queue_and_bind(ch);
+    declare_exchange(ch).await;
+    declare_queue_and_bind(ch).await;
 
     let mut consumer = ch
         .basic_consume(
@@ -37,11 +42,35 @@ pub async fn consume(ch: &Channel) {
     }
 }
 
+async fn declare_exchange(channel: &Channel) {
+    channel
+        .exchange_declare(
+            "test_exchange",
+            lapin::ExchangeKind::Direct,
+            ExchangeDeclareOptions {
+                durable: true,
+                auto_delete: false,
+                internal: false,
+                nowait: false,
+                ..Default::default()
+            },
+            FieldTable::default(),
+        )
+        .await
+        .expect("Exchange declaration failed");
+}
+
 async fn declare_queue_and_bind(channel: &Channel) {
     let q = channel
         .queue_declare(
             "item_qeue",
-            QueueDeclareOptions::default(),
+            QueueDeclareOptions {
+                durable: true,
+                auto_delete: false,
+                exclusive: false,
+                nowait: false,
+                ..Default::default()
+            },
             FieldTable::default(),
         )
         .await
@@ -50,8 +79,8 @@ async fn declare_queue_and_bind(channel: &Channel) {
     channel
         .queue_bind(
             "item_qeue",
-            "exchange",
-            q.name(),
+            "test_exchange",
+            q.name().as_str(),
             QueueBindOptions::default(),
             FieldTable::default(),
         )
@@ -60,11 +89,13 @@ async fn declare_queue_and_bind(channel: &Channel) {
 }
 
 async fn handle_msg(payload: &[u8]) {
-    let item: Item = match serde_json::from_slice(payload) {
+    let _item: Item = match serde_json::from_slice(payload) {
         Ok(u) => u,
         Err(err) => {
             eprintln!("Failed to parse msg: {}", err);
             return;
         }
     };
+
+    println!("Item received: {:?}", _item);
 }

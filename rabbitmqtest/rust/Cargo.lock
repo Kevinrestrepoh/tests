@@ -1281,6 +1281,7 @@ dependencies = [
 name = "rust"
 version = "0.1.0"
 dependencies = [
+ "futures-lite",
  "lapin",
  "rand",
  "serde",

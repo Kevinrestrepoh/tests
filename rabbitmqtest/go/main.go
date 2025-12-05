@@ -9,15 +9,15 @@ import (
 )
 
 func main() {
-	ch, close := ConnectRabbitMQ("amqp://admin:admin@localhost:5672/")
+	ch, conn := ConnectRabbitMQ("amqp://admin:admin@localhost:5672/test")
 	defer func() {
 		ch.Close()
-		close()
+		conn.Close()
 	}()
 
-	q, err := ch.QueueDeclare("item_qeue", true, false, false, false, nil)
+	q, err := Declare(ch)
 	if err != nil {
-		log.Fatal(err)
+		log.Fatalf("Failed to declar exchange or qeue: %v", err)
 	}
 
 	item := Item{
@@ -29,7 +29,7 @@ func main() {
 		log.Fatal(err)
 	}
 
-	err = ch.PublishWithContext(context.Background(), "exchange", q.Name, false, false, amqp.Publishing{
+	err = ch.PublishWithContext(context.Background(), "test_exchange", q.Name, false, false, amqp.Publishing{
 		ContentType: "application/json",
 		Body:        data,
 	})
